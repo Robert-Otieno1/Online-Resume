@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+   background-color: #5d1d88;
+
+}
+.Navbar{
+    display: flex;
+    color:#ffb700 ;
+    margin: 10px;text-align: center;
+    align-items: center;
+}
+.Navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+    text-align: center;
+   
+}
+.Navbar a{
+    color: #ffb700;
+    text-decoration: none;
+    background-color: beige;
+    
+}
+.Navbar ul li{
+    justify-content: space-evenly;
+    margin: 10px;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+button{
+    border: 2 px solid blanchedalmond;
+    width: 80px;
+    height: 40px;
+    background-color: beige;
+}
