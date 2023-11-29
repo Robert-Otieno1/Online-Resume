@@ -7,7 +7,8 @@
 
 .header {
     height: 100px;
-    background-color: #5d1d88;
+    background-color: #5d1d88 ;
+   
     padding: 0 20px;
     color: #FFF;
 }
@@ -17,6 +18,10 @@
     float: left;
     transition: 0.4s;
     cursor: pointer;
+}
+.logo img{
+    height: 130px;
+    width: 200px;
 }
 
 .menu {
