@@ -1,39 +1,95 @@
-*{
+* {
     margin: 0;
     padding: 0;
-   background-color: #5d1d88;
+    box-sizing: border-box;
+    font-family: "montserrat",sans-serif;
+}
 
+.header {
+    height: 100px;
+    background-color: #5d1d88;
+    padding: 0 20px;
+    color: #FFF;
 }
-.Navbar{
-    display: flex;
-    color:#ffb700 ;
-    margin: 10px;text-align: center;
-    align-items: center;
+
+.logo {
+    line-height: 100px;
+    float: left;
+    transition: 0.4s;
+    cursor: pointer;
 }
-.Navbar ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 10px;
-    text-align: center;
-   
+
+.menu {
+    float: right;
+    line-height: 100px;
 }
-.Navbar a{
-    color: #ffb700;
+
+.menu  a {
     text-decoration: none;
-    background-color: beige;
+    color: #FFF;
+    margin: 0 10px;
+    transition: 0.4s;
+}
+
+.show-menu-button,
+.hide-menu-button {
+    transition: 0.4s;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    line-height: 100px;
+}
+
+.show-menu-button {
+    float: right;
+}
+
+.menu a:hover,
+.logo:hover,
+.show-menu-button i:hover,
+.hide-menu-button i:hover {
+    color: #3498db;
+}
+
+#chk {
+    display: none;
+}
+
+
+
+@media screen and (max-width:800px) {
+
+    .show-menu-button,
+    .hide-menu-button {
+        display: block;
+    }
     
-}
-.Navbar ul li{
-    justify-content: space-evenly;
-    margin: 10px;
-    list-style: none;
-    text-align: center;
-    align-items: center;
-}
-button{
-    border: 2 px solid blanchedalmond;
-    width: 80px;
-    height: 40px;
-    background-color: beige;
+
+    .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #333;
+        padding: 80px 0;        
+        text-align: center;
+        transition: 0.7s;
+        right: -100%;
+        
+    }
+
+    .menu  a {
+        display: block;
+    }
+
+    .hide-menu-button {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+
+    #chk:checked ~ .menu{
+        right: 0;
+    }
+
+
 }
