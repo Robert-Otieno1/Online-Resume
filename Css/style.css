@@ -9,6 +9,11 @@
   .navbar-brand {
     color: #ffffff;
     font-weight: bold;
+
+  }
+  .navbar-brand img{
+    max-width:120px; 
+    margin-top: -7px;
   }
 
   .navbar-nav .nav-item .nav-link {
